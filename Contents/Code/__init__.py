@@ -155,6 +155,7 @@ def CreateVideoClipObject(url, title, thumb, summary, container = False):
         rating_key = title,
         url = url,
         title = title,
+        duration = 3000000,
         thumb = GetThumb(thumb),
         summary = summary,
         items = [
@@ -163,6 +164,7 @@ def CreateVideoClipObject(url, title, thumb, summary, container = False):
                 #video_codec = VideoCodec.H264, # H264
                 #audio_codec = AudioCodec.AAC,  # ACC, MP3
                 #audio_channels = 2,            # 2, 6
+                duration = 300000,
                 parts = [
                     PartObject(
                         key = GetVideoURL(url = url)
